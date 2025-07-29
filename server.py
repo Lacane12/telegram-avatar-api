@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import json, os, time
 
 app = Flask(__name__)
+CORS(app)  
 
 CACHE_FILE = "avatar_cache.json"
 CACHE_TTL = 60 * 60  # 1 час
