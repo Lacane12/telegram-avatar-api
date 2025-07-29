@@ -1,9 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS       # ← импортируем
 import requests
 from bs4 import BeautifulSoup
-import json
-import os
-import time
+import json, os, time
 
 app = Flask(__name__)
 
